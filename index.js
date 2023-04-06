@@ -10,16 +10,16 @@
 
 // EXAMPLE SOLUTION CODE:
 class Airplane {
-  constructor(name) {
-    this.name = name;
-    this.isFlying = false;
-  }
-  takeOff() {
-    this.isFlying = true;
-  }
-  land() {
-    this.isFlying = false;
-  }
+     constructor(name) {
+          this.name = name;
+          this.isFlying = false;
+     }
+     takeOff() {
+          this.isFlying = true;
+     }
+     land() {
+          this.isFlying = false;
+     }
 }
 
 /*
@@ -44,8 +44,28 @@ class Airplane {
 */
 
 class Person {
-  
+     constructor(name, age) {
+          this.name = name;
+          this.age = age;
+          this.stomach = [];
+     }
+     eat(foodItem) {
+          if (this.stomach.length < 10) {
+               this.stomach.push(foodItem);
+          }
+     }
+     poop() {
+          this.stomach = [];
+     }
+     toString() {
+          return `${this.name}, ${this.age}`
+     }
 }
+
+// const lewie = new Person('Lewie', 43);
+
+// console.log(lewie);
+// console.log(lewie.toString());
 
 /*
   TASK 2
@@ -62,7 +82,7 @@ class Person {
 */
 
 class Car {
-  
+
 }
 
 /*
@@ -79,7 +99,7 @@ class Car {
 */
 
 class Lambdasian {
-  
+
 }
 
 /*
@@ -118,7 +138,7 @@ class Instructor {
 */
 
 class Student {
-   
+
 }
 
 /*
@@ -136,7 +156,7 @@ class Student {
 */
 
 class ProjectManager {
-   
+
 }
 
 /*
@@ -151,16 +171,16 @@ class ProjectManager {
 
 //End of Challenge
 /* 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 */
-function foo(){
-  return 'bar';
+function foo() {
+     return 'bar';
 }
 
 module.exports = {
-  foo,
-  Person,
-  Car,
-  Lambdasian,
-  Instructor,
-  Student,
-  ProjectManager
+     foo,
+     Person,
+     Car,
+     Lambdasian,
+     Instructor,
+     Student,
+     ProjectManager
 }
