@@ -119,7 +119,14 @@ class Car {
 */
 
 class Lambdasian {
-
+     constructor(personObj) {
+          this.name = personObj.name;
+          this.age = personObj.age;
+          this.location = personObj.location;
+     }
+     speak() {
+          return `Hello my name is ${this.name}, I am from ${this.location}`
+     }
 }
 
 /*
